@@ -22,7 +22,7 @@ class Main {
         // If largest number for sieve is not a perfect square, then
         limit = (int) (Math.pow(limit, .5));
 
-        System.out.println("Maximum possible number used for sieve: " + limit + "\n");
+        System.out.println("Maximum possible factor used for sieve: " + limit + "\n");
 
         // 0 & 1 are not prime numbers; set to 'true'
         sieve[0] = true;
@@ -78,7 +78,7 @@ class Main {
         // SLOWEST part of program, screen output
 //        fw.write("Number of primes: " + count + "\n");
 
-        fw.write("Largest prime number used for sieve: " + index +", maximum possible number for sieve: " + limit + "\n");
+        fw.write("Largest prime factor used for sieve: " + index +", maximum possible factor for sieve: " + limit + "\n");
         count = 0;
         for (int j = 2; j < sieve.length; j++){
             if (!sieve[j]) {
